@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 15,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Email Address
+    </Text>
+    <View
+      style={
+        Object {
+          "height": 8,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderColor": "rgba(0, 0, 0, 0.2)",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": undefined,
+          "marginBottom": 15,
+          "padding": 10,
+        }
+      }
+    >
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        editable={true}
+        keyboardType="default"
+        multiline={false}
+        placeholder="Your Email Address"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
+        secureTextEntry={false}
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "alignSelf": "flex-start",
+            "color": "#000",
+            "fontSize": 15,
+            "fontWeight": "normal",
+            "width": "80%",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 15,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Message
+    </Text>
+    <View
+      style={
+        Object {
+          "height": 8,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderColor": "rgba(0, 0, 0, 0.2)",
+          "borderRadius": 10,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "height": undefined,
+          "marginBottom": 15,
+          "padding": 10,
+        }
+      }
+    >
+      <TextInput
+        autoCapitalize="none"
+        autoCorrect={false}
+        editable={true}
+        keyboardType="default"
+        multiline={true}
+        placeholder="Your message"
+        placeholderTextColor="rgba(0, 0, 0, 0.2)"
+        secureTextEntry={false}
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "alignSelf": "flex-start",
+            "color": "#000",
+            "fontSize": 15,
+            "fontWeight": "normal",
+            "width": "80%",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#07047F",
+        "borderRadius": 10,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+        }
+      }
+    >
+      Send
+    </Text>
+  </View>
+</View>
+`;

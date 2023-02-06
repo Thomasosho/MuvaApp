@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 14,
+        "textAlign": "justify",
+      }
+    }
+  >
+    We buckle down to remain the best mobile apps development company in Kenya and beyond. You said you like details? Click any link below:
+  </Text>
+</View>
+`;
