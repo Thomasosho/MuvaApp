@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
   }
 >
   <Text>
-    SettingsScreen
+    Welcome Settings Screen
   </Text>
 </View>
 `;

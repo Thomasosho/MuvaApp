@@ -5,7 +5,7 @@ import Content from "../../components/Content";
 const LocationScreen = () => {
   return (
     <Content>
-      <Text>LocationScreen</Text>
+      <Text>Location Screen</Text>
     </Content>
   );
 };

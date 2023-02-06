@@ -5,7 +5,7 @@ import Content from "../../components/Content";
 const HistoryScreen = () => {
   return (
     <Content>
-      <Text>HistoryScreen</Text>
+      <Text>History Screen</Text>
     </Content>
   );
 };
