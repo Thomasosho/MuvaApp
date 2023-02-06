@@ -9,17 +9,50 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Entypo, Feather, Ionicons, Octicons } from "@expo/vector-icons";
 import HomeScreen from "../screens/home/Home";
+import routes from "./routes";
+import ContactScreen from "../screens/contact/Contact";
+import AboutScreen from "../screens/about/About";
+import OurCompanyScreen from "../screens/our-company/OurCompany";
+import WhatWeDoScreen from "../screens/what-we-do/WhatWeDo";
+import { useNavigation } from "@react-navigation/native";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const HomeNavigator = () => {
+  const navigation = useNavigation();
   return (
     <Stack.Navigator
-      initialRouteName="HomeInit"
-      screenOptions={{ headerShown: false }}
+      initialRouteName={routes.HOMENAV}
+      screenOptions={{ headerShown: true }}
     >
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen
+        name={routes.HOME}
+        component={HomeScreen}
+        options={{
+          headerTitle: "Welcome",
+          headerLeft: () => (
+            <Ionicons
+              onPress={() => {
+                navigation.openDrawer();
+              }}
+              style={{ marginHorizontal: 10 }}
+              name="menu"
+              size={30}
+            />
+          ),
+        }}
+      />
+      <Stack.Screen
+        name={routes.OURCOMPANY}
+        component={OurCompanyScreen}
+        options={{ headerTitle: "Our Company", headerBackTitle: "" }}
+      />
+      <Stack.Screen
+        name={routes.WHATWEDO}
+        component={WhatWeDoScreen}
+        options={{ headerTitle: "What We Do", headerBackTitle: "" }}
+      />
     </Stack.Navigator>
   );
 };
@@ -27,13 +60,13 @@ const HomeNavigator = () => {
 const MainNavigator = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Homeflow"
-      screenOptions={{ headerShown: true, tabBarActiveTintColor: colors.blue }}
+      screenOptions={{ headerShown: false, tabBarActiveTintColor: colors.blue }}
     >
       <Tab.Screen
-        name="HomeFlow"
+        name={routes.HOMEFLOW}
         component={HomeNavigator}
         options={{
+          headerTitle: "Welcome",
           tabBarIcon: (tabInfo) => (
             <Octicons name="home" size={24} color="black" />
           ),
@@ -41,9 +74,11 @@ const MainNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Contact"
-        component={HomeNavigator}
+        name={routes.CONTACT}
+        component={ContactScreen}
         options={{
+          headerShown: true,
+          headerTitle: "Contact Us",
           tabBarIcon: (tabInfo) => (
             <Feather name="phone" size={24} color="black" />
           ),
@@ -51,9 +86,11 @@ const MainNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="About"
-        component={HomeNavigator}
+        name={routes.ABOUT}
+        component={AboutScreen}
         options={{
+          headerShown: true,
+          headerTitle: "About Us",
           tabBarIcon: (tabInfo) => (
             <Entypo name="info" size={24} color="black" />
           ),
@@ -65,18 +102,3 @@ const MainNavigator = () => {
 };
 
 export default MainNavigator;
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 24,
-    backgroundColor: "red",
-  },
-  contentContainer: {
-    flex: 1,
-    paddingLeft: 50,
-  },
-  bottomSheetTitle: {
-    fontSize: 24,
-    fontWeight: "500",
-  },
-});
