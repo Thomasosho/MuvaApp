@@ -7,7 +7,7 @@ import routes from "../../navigation/routes";
 import Content from "../../components/Content";
 
 const HomeScreen = ({ navigation }) => {
-  const nav = useNavigation();
+  //   const nav = useNavigation();
   return (
     <Content>
       <Text style={{ ...globalStyles.fontBold16, textAlign: "center" }}>
@@ -28,7 +28,7 @@ const HomeScreen = ({ navigation }) => {
       <Button
         text="Our Company"
         onPress={() => {
-          nav.navigate(routes.OURCOMPANY);
+          navigation.navigate(routes.OURCOMPANY);
         }}
       />
     </Content>

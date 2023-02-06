@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 16,
+        "fontWeight": "bold",
+        "textAlign": "center",
+      }
+    }
+  >
+    We are Muva
+  </Text>
+  <View
+    style={
+      Object {
+        "height": 8,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 14,
+        "textAlign": "center",
+      }
+    }
+  >
+    We design and develop custom mobile solutions (apps) and websites
+  </Text>
+  <View
+    style={
+      Object {
+        "height": 16,
+      }
+    }
+  />
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#07047F",
+        "borderRadius": 10,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+        }
+      }
+    >
+      What We Do
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 16,
+      }
+    }
+  />
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#07047F",
+        "borderRadius": 10,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+        }
+      }
+    >
+      Our Company
+    </Text>
+  </View>
+</View>
+`;

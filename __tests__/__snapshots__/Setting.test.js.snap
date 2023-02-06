@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text>
+    SettingsScreen
+  </Text>
+</View>
+`;
