@@ -142,7 +142,7 @@ exports[`renders correctly 1`] = `
         "alignItems": "center",
         "alignSelf": "center",
         "backgroundColor": "#07047F",
-        "borderRadius": 10,
+        "borderRadius": 20,
         "justifyContent": "center",
         "opacity": 1,
         "padding": 15,

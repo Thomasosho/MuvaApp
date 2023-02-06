@@ -5,7 +5,7 @@ import Content from "../../components/Content";
 const SettingsScreen = () => {
   return (
     <Content>
-      <Text>SettingsScreen</Text>
+      <Text>Welcome Settings Screen</Text>
     </Content>
   );
 };

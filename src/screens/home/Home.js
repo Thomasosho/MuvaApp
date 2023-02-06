@@ -21,7 +21,7 @@ const HomeScreen = ({ navigation }) => {
       <Button
         text="What We Do"
         onPress={() => {
-          nav.navigate(routes.WHATWEDO);
+          navigation.navigate(routes.WHATWEDO);
         }}
       />
       <View style={globalStyles.spacer2} />

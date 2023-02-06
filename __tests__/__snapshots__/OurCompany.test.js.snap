@@ -17,5 +17,40 @@ exports[`renders correctly 1`] = `
   <Text>
     OurCompanyScreen
   </Text>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#000",
+        "borderRadius": 20,
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 15,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+        }
+      }
+    >
+      Go Back
+    </Text>
+  </View>
 </View>
 `;
