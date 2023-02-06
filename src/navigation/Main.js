@@ -30,7 +30,8 @@ const HomeNavigator = () => {
         name={routes.HOME}
         component={HomeScreen}
         options={{
-          headerTitle: "Welcome",
+          headerShown: true,
+          headerTitle: "MuvaApp",
           headerLeft: () => (
             <Ionicons
               onPress={() => {
@@ -58,6 +59,7 @@ const HomeNavigator = () => {
 };
 
 const MainNavigator = () => {
+  const navigation = useNavigation();
   return (
     <Tab.Navigator
       screenOptions={{ headerShown: false, tabBarActiveTintColor: colors.blue }}
@@ -68,7 +70,11 @@ const MainNavigator = () => {
         options={{
           headerTitle: "Welcome",
           tabBarIcon: (tabInfo) => (
-            <Octicons name="home" size={24} color="black" />
+            <Octicons
+              name="home"
+              size={24}
+              color={tabInfo.focused ? colors.primary : colors.black}
+            />
           ),
           title: "Home",
         }}
@@ -79,8 +85,22 @@ const MainNavigator = () => {
         options={{
           headerShown: true,
           headerTitle: "Contact Us",
+          headerLeft: () => (
+            <Ionicons
+              onPress={() => {
+                navigation.openDrawer();
+              }}
+              style={{ marginHorizontal: 10 }}
+              name="menu"
+              size={30}
+            />
+          ),
           tabBarIcon: (tabInfo) => (
-            <Feather name="phone" size={24} color="black" />
+            <Feather
+              name="phone"
+              size={24}
+              color={tabInfo.focused ? colors.primary : colors.black}
+            />
           ),
           title: "Contact",
         }}
@@ -91,8 +111,22 @@ const MainNavigator = () => {
         options={{
           headerShown: true,
           headerTitle: "About Us",
+          headerLeft: () => (
+            <Ionicons
+              onPress={() => {
+                navigation.openDrawer();
+              }}
+              style={{ marginHorizontal: 10 }}
+              name="menu"
+              size={30}
+            />
+          ),
           tabBarIcon: (tabInfo) => (
-            <Entypo name="info" size={24} color="black" />
+            <Entypo
+              name="info"
+              size={24}
+              color={tabInfo.focused ? colors.primary : colors.black}
+            />
           ),
           title: "About",
         }}
